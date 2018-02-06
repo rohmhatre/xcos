@@ -1,0 +1,13 @@
+version: '2'
+services:
+  xcos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: xcos:ubuntu
+    container_name: xcos1
+    volumes:
+      - ./xcos_on_cloud:/Site/xcos_on_cloud
+    ports:
+      - 8001:8001
+    restart: always
