@@ -32,7 +32,6 @@ clean: stop
 	@docker-compose rm --force
 
 build:
-	@git clone https://github.com/FOSSEE/xcos_on_cloud.git
 	@docker-compose build
 
 tail:
