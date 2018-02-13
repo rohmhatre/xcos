@@ -10,16 +10,22 @@ Pre-Requisites
 Docker Compose Help for Deploying interface
 -----------------------
 
+	- Clone xocs on cloud:
 
-Build docker images:
-    make build
+		make clone
 
-To run containers:
-    make start
+	- Build docker images:
+	 
+		make build
+
+	- To run containers:
+
+		make start
 
 Now Your interface is ready. You can access it using browser just go to http://localhost:8001
 
-Really, really start over:
-    make clean
+	- Really, really start over:
 
-other utilities:restart,tail,status 
+		make clean
+
+other utilities:restart,tail,status

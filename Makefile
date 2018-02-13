@@ -1,6 +1,9 @@
 help:
 	@echo "Docker Compose Help for Deploying interface"
 	@echo  "-----------------------\n"
+	@echo ""	
+	@echo "Clone xocs on cloud:"
+	@echo "    make clone"
 	@echo ""
 	@echo "Build docker images:"
 	@echo "    make build"
@@ -19,6 +22,9 @@ help:
 
 start:
 	@docker-compose up -d
+
+clone:
+	@git clone https://github.com/FOSSEE/xcos_on_cloud.git
 
 stop:
 	@docker-compose stop
